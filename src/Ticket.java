@@ -1,32 +1,37 @@
 
 public class Ticket {
 	private Saloon saloon;
-	private Session session;
-	private int x;
-	private int y;
+	private Hour session;
+	public int id;
+	
+	private int row;
+	private int column;
 	public Saloon getSaloon() {
 		return saloon;
 	}
-	public Session getSession() {
+	public Hour getSession() {
 		return session;
 	}
-	public int getX() {
-		return x;
+	public int getRow() {
+		return row;
 	}
-	public int getY() {
-		return y;
+	public int getColumn() {
+		return column;
 	}
-	public Ticket(Saloon saloon, Session session, int x, int y) {
+	public int getId() {
+		return id;
+	}
+	public Ticket(Saloon saloon, Hour session, int x, int y) {
 		super();
 		this.saloon = saloon;
 		this.session = session;
-		this.x = x;
-		this.y = y;
+		this.row = x;
+		this.column = y;
 	}
 	@Override
 	public String toString() {
-		return "Ticket [saloon=" + saloon + ", session=" + session + ", x=" + x
-				+ ", y=" + y + "]";
+		return "Ticket [saloon=" + saloon + ", session=" + session + ", row=" + row
+				+ ", column=" + column + "]";
 	}
 	
 }

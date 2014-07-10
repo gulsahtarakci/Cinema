@@ -1,5 +1,6 @@
 
 public class Saloon {
+	private int id;
 	private int rows;
 	private int cols;
 	private String name;
@@ -12,8 +13,12 @@ public class Saloon {
 	public String getName() {
 		return name;
 	}
-	public Saloon(String name, int rows, int cols) {
+	public int getId() {
+		return id;
+	}
+	public Saloon(int id,String name, int rows, int cols) {
 		super();
+		this.id = id;
 		this.rows = rows;
 		this.cols = cols;
 		this.name = name;

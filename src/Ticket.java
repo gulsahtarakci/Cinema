@@ -23,5 +23,10 @@ public class Ticket {
 		this.x = x;
 		this.y = y;
 	}
+	@Override
+	public String toString() {
+		return "Ticket [saloon=" + saloon + ", session=" + session + ", x=" + x
+				+ ", y=" + y + "]";
+	}
 	
 }

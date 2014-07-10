@@ -18,6 +18,11 @@ public class Saloon {
 		this.cols = cols;
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Saloon [rows=" + rows + ", cols=" + cols + ", name=" + name
+				+ "]";
+	}
 	
 	
 	
